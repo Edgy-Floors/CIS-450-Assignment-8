@@ -26,10 +26,10 @@ public abstract class AbstractSword : MonoBehaviour
     public abstract void addFlexible();
 
     // Boolean Functions
-    public bool wantsEdge() { return true; }
-    public string metal() { return "iron"; }
-    public bool wantsFlexible() { return true; }
-    public string handle() { return "basic handle"; }
+    public virtual bool wantsEdge() { return true; }
+    public virtual string metal() { return "iron"; }
+    public virtual bool wantsFlexible() { return true; }
+    public virtual string handle() { return "basic handle"; }
 
     // Nonconditional Functions
     public abstract void heatMetal(string metal);

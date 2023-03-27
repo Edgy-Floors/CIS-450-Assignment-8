@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ThrustingSword : AbstractSword
 {
+    public override bool wantsEdge()
+    {
+        return false;
+    }
+
     public override void addEdge()
     {
         
@@ -11,6 +16,7 @@ public class ThrustingSword : AbstractSword
 
     public override void addFlexible()
     {
+
     }
 
     public override void addHandle(string handle)

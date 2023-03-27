@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SingleEdgeSword : AbstractSword
 {
+    public override bool wantsFlexible()
+    {
+        return false;
+    }
     public override void addEdge()
     {
     }
